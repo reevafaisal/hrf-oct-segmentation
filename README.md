@@ -4,14 +4,14 @@
 
 *A-EYE Unit, Wisconsin Reading Center, Department of Ophthalmology and Visual Sciences, UW–Madison*
 
-## Pipeline
+### Pipeline
 
 1. **Preprocessing** — OCT volumes separated per subject into individual B-scan slices, each paired with its corresponding mask.
 2. **Data organization** — files structured into the format required by nnSAM.
 3. **B-scan selection** — for every positive B-scan, an equal number of neighboring B-scans (before/after in the same subject) were sampled as negatives, ensuring adequate negative representation without letting negatives dominate the dataset.
 4. **Model run** — nnSAM run on the selected B-scans, with results evaluated on both internal and external test sets
 
-## Status
+### Status
 
 - ✅ OCT preprocessing — per-subject, per-slice organization with paired masks
 - ✅ Data reformatted into nnSAM-compatible structure
@@ -24,6 +24,6 @@
 
      
 
-## Contact
+### Contact
 
 Reeva Faisal — [rfaisal@wisc.edu](mailto:rfaisal@wisc.edu)
